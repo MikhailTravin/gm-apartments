@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>О нас</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <header class="header">
+        <div class="header__top">
+            <div class="container header__top-container">
+                <span class="header__address">Офис: Москва, ул. Гостиничная, 9Б, оф. 9</span>
+                <div class="header__contacts">
+                    <a class="header__contact" href="tel:88006004993">T: 8 (800) 600 49 93</a>
+                    <a class="header__contact" href="https://wa.me/79295863133">WhatsApp / Telegram: +7 (929) 586 31
+                        33</a>
+                    <a class="header__contact" href="mailto:guestrelation@gmapartments.ru"> E:
+                        guestrelation@gmapartments.ru </a>
+                    <div class="lang-switcher">
+                        <button class="lang-switcher__button" type="button">ENG</button>
+                        <span class="lang-switcher__separator">/</span>
+                        <button class="lang-switcher__button lang-switcher__button--active" type="button">РУС</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="container header__main-container">
+                <div class="haader__col header__left">
+                    <button class="header__burger" type="button" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav class="header__nav nav">
+                        <a class="nav__link" href="https://devotomweb.pro/apartments.html">Апартаменты</a>
+                        <a class="nav__link nav__link--active" href="https://devotomweb.pro/open-moscow.html">Открыть
+                            Москву</a>
+                        <a class="nav__link" href="https://devotomweb.pro/gma-rewards.html">GMA Rewards</a>
+                    </nav>
+                </div>
+                <div class="haader__col header__center">
+                    <a class="header__logo logo" href="https://devotomweb.pro/">GM APARTMENTS</a>
+                </div>
+                <div class="haader__col header__right">
+                    <nav class="header__nav nav">
+                        <a class="nav__link" href="https://devotomweb.pro/about.html">О Нас</a>
+                        <a class="nav__link" href="https://devotomweb.pro/profile.html">Профиль</a>
+                        <a class="nav__link" href="https://devotomweb.pro/booking.html">Забронировать</a>
+                    </nav>
+                </div>
+            </div>
+            <nav class="mobile-menu" aria-hidden="true"><a class="nav__link nav__link--active mobile-menu__link"
+                    href="https://devotomweb.pro/apartments.html">Апартаменты</a><a class="nav__link mobile-menu__link"
+                    href="https://devotomweb.pro/open-moscow.html">Открыть Москву</a><a
+                    class="nav__link mobile-menu__link" href="https://devotomweb.pro/gma-rewards.html">GMA Rewards</a><a
+                    class="nav__link mobile-menu__link" href="https://devotomweb.pro/about.html">О Нас</a><a
+                    class="nav__link mobile-menu__link" href="https://devotomweb.pro/profile.html">Профиль</a><a
+                    class="nav__link mobile-menu__link" href="https://devotomweb.pro/booking.html">Забронировать</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="about-page">
+            <div class="container about-page__container">
+                <nav class="breadcrumbs apartment__breadcrumbs">
+                    <a class="breadcrumbs__link" href="https://devotomweb.pro/">Главная</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <span class="breadcrumbs__current"> О нас </span>
+                </nav>
+                <div class="about-page__header">
+                    <h1 class="about-page__title title">О Нас</h1>
+                </div>
+                <div class="about-page__hero">
+                    <img src="img/about.webp" alt="Москва-Сити на закате">
+                </div>
+                <div class="about-story">
+                    <h2 class="about-story__title">История</h2>
+                    <div class="about-story__text">
+                        <p>Мы предлагаем вам размещение в лучших квартирах Москвы.</p>
+                        <p>Это уютные стильные и просторные
+                            квартиры, расположенные в центре Москвы, и пределах Садового кольца. Все
+                            квартиры оборудованы по последнему слову техники и имеют все
+                            необходимое для комфортного и полноценного отдыха как дома!</p>
+                        <p>Давно выяснено, что при оценке дизайна и
+                            композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют
+                            потому, что тот обеспечивает более или менее стандартное заполнение
+                            шаблона, а также реальное распределение букв и пробелов в абзацах.</p>
+                        <p>Здесь ваш текст. Здесь ваш текст. Многие
+                            программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в
+                            качестве текста по умолчанию, так что поиск по ключевым словам lorem
+                            ipsum сразу показывает, как много веб-страниц всё ещё дожидаются своего
+                            настоящего рождения.</p>
+                    </div>
+                </div>
+                <div class="about__person person">
+                    <div class="person__content">
+                        <h3 class="person__name">Сергей Казарновский</h3>
+                        <blockquote class="person__quote">
+                            <p>“«Класс-Центр» — это не школа с углубленным изучением предметов искусств, это именно
+                                три полноценные школы под одной крышей.”</p>
+                        </blockquote>
+                    </div>
+                    <a class="person__video video-link" href="#" data-video-ready="true">
+                        <video class="video-link__image" preload="metadata" poster="img/video-poster1.webp">
+                            <source src="img/video.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <span class="video-link__play">Смотреть видео</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="about-team">
+            <div class="container about-team__container">
+                <div class="about-team__head">
+                    <div>
+                        <h2 class="about-section-title">Лица Компании</h2>
+                        <p class="about-section-text">Уютные стильные и просторные квартиры, расположенные в центре
+                            Москвы, в пределах Садового кольца</p>
+                    </div>
+                    <div class="about-team__tabs">
+                        <button class="about-team__tab is-active" type="button">Руководство</button>
+                        <button class="about-team__tab" type="button">Менеджмент</button>
+                    </div>
+                </div>
+                <div class="about-team__grid">
+                    <article class="about-team-card">
+                        <img src="img/team-img.webp" alt="Петр Иванов">
+                        <h3>Петр Иванов</h3>
+                        <p>Генеральный Директор</p>
+                    </article>
+                    <article class="about-team-card">
+                        <img src="img/team-img.webp" alt="Петр Иванов">
+                        <h3>Петр Иванов</h3>
+                        <p>Генеральный Директор</p>
+                    </article>
+                    <article class="about-team-card">
+                        <img src="img/team-img.webp" alt="Петр Иванов">
+                        <h3>Петр Иванов</h3>
+                        <p>Генеральный Директор</p>
+                    </article>
+                    <article class="about-team-card">
+                        <img src="img/team-img.webp" alt="Петр Иванов">
+                        <h3>Петр Иванов</h3>
+                        <p>Генеральный Директор</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="about-vacancy" id="vacancies" style="background-image: url(img/comfort-img1.webp);">
+            <div class="container about-vacancy__container">
+                <div class="about-vacancy__content">
+                    <h2 class="about-vacancy__title">Вакансии</h2>
+                    <div class="about-vacancy__text">
+                        <p>Для многих организаций составление
+                            текстов может быть отдельным и серьезным вопросом инвестиций. Контент
+                            могут регулировать локальные правила бизнеса.</p>
+                        <p>В некоторых случаях выплаты по крупным
+                            облигациям может быть меньше, чем её рыночная цена, с помощью оферты
+                            облигации эмитент может регулировать доходность этой ценной бумаги.</p>
+                    </div>
+                    <a class="about-link" href="https://devotomweb.pro/about.html">Подробнее</a>
+                </div>
+            </div>
+        </section>
+        <section class="about-cooperation" id="cooperation">
+            <div class="container about-cooperation__container">
+                <div class="about-cooperation__content">
+                    <h2 class="about-section-title">Сотрудничество</h2>
+                    <div class="about-cooperation__text">
+                        <p>Многие программы электронной вёрстки и
+                            редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию,
+                            так что поиск по ключевым словам lorem ipsum сразу показывает, как много
+                            веб-страниц всё ещё дожидаются своего настоящего рождения.</p>
+                        <p>За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по
+                            ошибке, некоторые — намеренно.</p>
+                    </div>
+                    <a class="about-link" href="https://devotomweb.pro/about.html">Подробнее</a>
+                </div>
+                <div class="about-cooperation__cards">
+                    <a class="about-cooperation-card" href="https://devotomweb.pro/about.html#cooperation">
+                        <img src="img/moscow-img3.jpg" alt="Для арендодателей">
+                        <span>Для арендодателей</span>
+                    </a>
+                    <a class="about-cooperation-card" href="https://devotomweb.pro/about.html#cooperation">
+                        <img src="img/moscow-img4.jpg" alt="Для агентов">
+                        <span>Для агентов</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include 'blocks/footer.njk' %}
+    <div class="advanced-filter" id="advanced-filter" aria-hidden="true">
+        <div class="advanced-filter__overlay"></div>
+        <div class="advanced-filter__modal" role="dialog" aria-modal="true">
+            <button class="advanced-filter__close" type="button" aria-label="Закрыть"></button>
+            <h2 class="advanced-filter__title">Расширенный поиск</h2>
+            <form class="advanced-filter__form">
+                <div class="advanced-filter__group">
+                    <div class="advanced-filter__label">Количество комнат:</div>
+                    <div class="advanced-filter__options">
+                        <label>
+                            <input type="checkbox" name="rooms" value="studio">
+                            <span>Студия</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="rooms" value="1">
+                            <span>1 комната</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="rooms" value="2">
+                            <span>2 комнаты</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="rooms" value="3">
+                            <span>3 комнаты</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="rooms" value="4">
+                            <span>4 и более комнат</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="advanced-filter__group">
+                    <div class="advanced-filter__label">Оборудование и техника:</div>
+                    <div class="advanced-filter__options">
+                        <label>
+                            <input type="checkbox" name="equipment" value="conditioner">
+                            <span>Кондиционер</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="equipment" value="fridge">
+                            <span>Холодильник</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="equipment" value="microwave">
+                            <span>Микроволновка</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="equipment" value="washer">
+                            <span>Стиральная машина</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="equipment" value="dishwasher">
+                            <span>Посудомоечная машина</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="equipment" value="tv">
+                            <span>Телевизор</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="equipment" value="internet">
+                            <span>Интернет</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="advanced-filter__group">
+                    <div class="advanced-filter__label">Этаж:</div>
+                    <div class="advanced-filter__options">
+                        <label>
+                            <input type="checkbox" name="floor" value="not-first">
+                            <span>Не первый</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="floor" value="not-last">
+                            <span>Не последний</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="floor" value="last">
+                            <span>Только последний</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="advanced-filter__group">
+                    <div class="advanced-filter__label">Тип жилья:</div>
+                    <div class="advanced-filter__options">
+                        <label>
+                            <input type="checkbox" name="type" value="flat">
+                            <span>Квартиры</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="type" value="apartments">
+                            <span>Апартаменты</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="advanced-filter__group">
+                    <div class="advanced-filter__label">Санузел:</div>
+                    <div class="advanced-filter__options">
+                        <label>
+                            <input type="checkbox" name="bathroom" value="separate">
+                            <span>Раздельный</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="bathroom" value="combined">
+                            <span>Совмещенный</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="advanced-filter__group">
+                    <div class="advanced-filter__label">Балкон или Лоджия:</div>
+                    <div class="advanced-filter__options">
+                        <label>
+                            <input type="checkbox" name="balcony" value="balcony">
+                            <span>Балкон</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="balcony" value="loggia">
+                            <span>Лоджия</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="balcony" value="none">
+                            <span>Без</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="advanced-filter__group">
+                    <div class="advanced-filter__label">Правила:</div>
+                    <div class="advanced-filter__options">
+                        <label>
+                            <input type="checkbox" name="rules" value="kids">
+                            <span>Можно с детьми</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="rules" value="pets">
+                            <span>Можно с животными</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="rules" value="smoking">
+                            <span>Разрешено курить</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="advanced-filter__bottom">
+                    <div>
+                        <button class="advanced-filter__submit" type="submit">Применить фильтры</button>
+                    </div>
+                    <div>
+                        <button class="advanced-filter__reset" type="reset">Очистить выбор</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="gallery-lightbox" aria-hidden="true">
+        <button class="gallery-lightbox__close" type="button" aria-label="Закрыть галерею"></button>
+        <button class="gallery-lightbox__arrow gallery-lightbox__arrow--prev" type="button"
+            aria-label="Предыдущее фото"></button>
+        <div class="gallery-lightbox__viewer" role="dialog" aria-modal="true" aria-label="Галерея квартиры">
+            <div class="gallery-lightbox__slider swiper">
+                <div class="gallery-lightbox__wrapper swiper-wrapper"></div>
+            </div>
+        </div>
+        <button class="gallery-lightbox__arrow gallery-lightbox__arrow--next" type="button"
+            aria-label="Следующее фото"></button>
+        <div class="gallery-lightbox__thumbs swiper" aria-label="Миниатюры галереи">
+            <div class="gallery-lightbox__thumbs-wrapper swiper-wrapper"></div>
+        </div>
+    </div>
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>
